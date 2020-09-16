@@ -7,6 +7,7 @@ body {
     color: black;
     text-align: center;
     font-family: sans-serif;
+    margin: 50px;
 }
 
 .card-hotel {
@@ -15,6 +16,10 @@ body {
     margin-top: 10px;
     text-align: justify-all;
     font-size: 15px;
+}
+
+.footer-address-icon {
+    padding-right: 10px;
 }
 
 .btn-reserva {
