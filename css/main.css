@@ -11,8 +11,7 @@ body {
 }
 
 .card-hotel {
-    flex: 1 150px;
-    padding: 2px 20px 2px 2px;
+    flex: 1 200px;
     margin-top: 10px;
     text-align: justify-all;
     font-size: 15px;
@@ -20,6 +19,7 @@ body {
 
 .btn-reserva {
     width: 100%;
+    border-radius: 0px;
 }
 
 .btn-reserva:hover {
