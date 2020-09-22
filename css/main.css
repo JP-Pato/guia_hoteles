@@ -32,6 +32,9 @@ body {
     padding-right: 15px;
     color: goldenrod;
 }
+.tab-content {
+    padding-top: 10px;
+}
 
 footer {
     padding-top: 50px;
