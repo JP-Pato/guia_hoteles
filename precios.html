@@ -55,7 +55,7 @@
                 <li class="breadcrumb-item active" aria-current="page">Precios</li>
             </ol>
         </nav>
-    
+
 
 
         <ul class="nav nav-pills" id="myTab" role="tablist">
@@ -114,67 +114,98 @@
                 </div>
 
             </div>
-            
-             <div class="tab-pane fade" id="tarjeta" role="tabpanel" aria-labelledby="tarjetas-tab">
-          <div class="d-flex justify-content-center">
-             <div class="card" style="width: 18rem;">
-                <div class="card-header" style="background-color: blue; color: white;">Tarjetas Aceptadas</div>
-                <div>
-                    <ul class="list-group list-group-flush">
-                       <li class="list-group-item">Tarjeta Classic</li>
-                       <li class="list-group-item">Tarjeta Gold</li>
-                        <li class="list-group-item">Tarjeta Platinium</li>
-                        <li class="list-group-item">Tarjeta Black</li>
-                    </ul>
-                </div>
-                 
-             </div>
-              
-          </div>
-           
-       </div>
-       
-            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
-            
-            
-    </div>
 
-</div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 d-flex flex-column align-items-left">
-                    <a href="http://www.facebook.com"><i class="fab fa-facebook footer-socialmedia-icon"></i>Facebook</a>
-                    <a href="http://www.instagram.com"><i class="fab fa-instagram footer-socialmedia-icon"></i>Instagram</a>
-                    <a href="http://www.twitter.com"><i class="fab fa-twitter footer-socialmedia-icon"></i>Twitter</a>
+            <div class="tab-pane fade" id="tarjeta" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <div class="accordion" id="accordionTarjetas">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">Tarjeta Classic</button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseBasica" class="collapse" aria-labelledby="headingOne" data-parents="#accordionTarjetas">
+                            <div class="card-body">
+                                Reserva en 3 cuotas SIN interes
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseplatinium" aria-expanded="false" aria-controls="collapseplatinium">Tarjeta Platinium</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseplatinium" class="collapse" aria-labelledby="headingTwo" data-parents="#accordionTarjetas">
+                                <div class="card-body">
+                                    Reserva en 6 cuotas SIN interes con un 10% descuento
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                   <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseblack" aria-expanded="false" aria-controls="collapseblack">Tarjeta Black</button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseblack" class="collapse" aria-labelledby="headingThree" data-parents="#accordionTarjetas">
+                                <div class="card-body">
+                                    Reserva en 6 cuotas SIN interes con un 10% descuento
+                                </div>
+                            </div>
+
+
+                        </div>
+                   
+                    </div>
+
 
                 </div>
 
-                <div class="col-sm-4">
-                    <address>
-                        <p><span class="oi oi-home footer-address-icon"></span>Corso Del Popolo 81, Ciudad Fantasma, Argentina</p>
-                        <p><span class="oi oi-phone footer-address-icon"></span>+5449XXXXXXXXXXXXXX</p>
-                        <p><span class="oi oi-inbox footer-address-icon"></span>romahoteles@xxxx.com.ar</p>
-                    </address>
-                </div>
+                <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
 
-                <div class="col-sm-4 d-flex flex-column align-items-end">
-                    <a href="">Nosotros</a>
-                    <a href="">Precios</a>
-                    <a href="">Terminos y condiciones</a>
-                    <a href="">Contactos</a>
-                </div>
+
             </div>
 
         </div>
-    </footer>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 d-flex flex-column align-items-left">
+                        <a href="http://www.facebook.com"><i class="fab fa-facebook footer-socialmedia-icon"></i>Facebook</a>
+                        <a href="http://www.instagram.com"><i class="fab fa-instagram footer-socialmedia-icon"></i>Instagram</a>
+                        <a href="http://www.twitter.com"><i class="fab fa-twitter footer-socialmedia-icon"></i>Twitter</a>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+                    </div>
 
-</body>
+                    <div class="col-sm-4">
+                        <address>
+                            <p><span class="oi oi-home footer-address-icon"></span>Corso Del Popolo 81, Ciudad Fantasma, Argentina</p>
+                            <p><span class="oi oi-phone footer-address-icon"></span>+5449XXXXXXXXXXXXXX</p>
+                            <p><span class="oi oi-inbox footer-address-icon"></span>romahoteles@xxxx.com.ar</p>
+                        </address>
+                    </div>
 
-</html>
+                    <div class="col-sm-4 d-flex flex-column align-items-end">
+                        <a href="">Nosotros</a>
+                        <a href="">Precios</a>
+                        <a href="">Terminos y condiciones</a>
+                        <a href="">Contactos</a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+</body></html>
