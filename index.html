@@ -109,21 +109,21 @@
                         <button class="btn btn-success btn-reserva" data-toggle="modal" data-target="#contacto">Contacto</button>
                     </div>
                 </div>
+
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-                    <div class="card-header"><i class="fas fa-people-arrows"></i>Quienes Somos</div>
+                    <div class="card-header" data-toggle="tooltip" data-placement="top" title="La familia es lo primero">Quienes Somos</div>
                     <div class="card-body">
                         <img class="card-img-top" src="images/descarga.jpg" alt="hotel img">
                         <p class="card-text">Somos un desprendimiento del Hotel Grand'Italia establecido en Padova desde el siglo XVII. El propietario al frente del Hotel, perteneciente a una familia con amplia trayectoria en la industria hotelera...</p>
                     </div>
                     <div>
-                        <button class="btn btn-success btn-reserva">
-                            <span class="oi oi-credit-card btn-reserva-icon"></span>Ver Más</button>
+                        <button class="btn btn-success btn-reserva" data-toggle="popover" data-content="Una parte de Italia">Ver Más</button>
                     </div>
                 </div>
             </div>
         </div>
 
-
+<!--Modal-->
         <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -252,8 +252,15 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+
+    $(function(){
+    $("[data-toggle='tooltip']").tooltip();
+    $("[data-toggle='popover']").popover();
+    });
+    </script>
 
 </body>
 
