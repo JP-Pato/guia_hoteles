@@ -97,9 +97,7 @@
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                                
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>                                
                               </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -113,9 +111,6 @@
                                 </div>
                                 <div class="carousel-item">
                                         <img class="d-block w-100" src="images/standar_twin.jpg" alt="Cuarto Slide">
-                                </div>
-                                <div class="carousel-item">
-                                        <img class="d-block w-100" src="images/habitacion.png" alt="Quinto Slide">
                                 </div>
                             </div>                          
                         </div>
@@ -133,7 +128,7 @@
                         <p class="card-text">Consulte nuestras tarifas y disponibilidad de habitaciones llamando al (XXX) XXXXXX o Whats app XXXXXXXXX o enviando un correo electrónico al romahoteles@xxx.com.ar</p>
                     </div>
                     <div>
-                        <button class="btn btn-success btn-reserva" data-toggle="modal" data-target="#contacto">Contacto</button>
+                        <button class="btn btn-success btn-reserva" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
                     </div>
                 </div>
 
@@ -289,6 +284,21 @@
     $('.carousel').carousel({
         interval: 2000
     });
+    $("#contacto").on("show.bs.modal", function (e){
+        console.log("el modal se esta mostrando");
+<!--cambiar el color del boton-->
+        $("#contactoBtn").removeClass("btn-success");
+        $("#contactoBtn").addClass("btn-primary");
+<!--Desabilitar boton-->
+        $("#contactoBtn").prop('disabled', true);
+    });
+    
+    $("#contacto").on("hidden.bs.modal", function (e){
+        console.log("el modal se esta mostrando");
+        $("#contactoBtn").addClass("btn-success");
+        $("#contactoBtn").prop('disabled', false);
+    });
+
     });
     </script>
 
