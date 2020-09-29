@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 
@@ -286,10 +286,10 @@
     });
     $("#contacto").on("show.bs.modal", function (e){
         console.log("el modal se esta mostrando");
-<!--cambiar el color del boton-->
+
         $("#contactoBtn").removeClass("btn-success");
         $("#contactoBtn").addClass("btn-primary");
-<!--Desabilitar boton-->
+
         $("#contactoBtn").prop('disabled', true);
     });
     
