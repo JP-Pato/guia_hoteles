@@ -2,14 +2,18 @@
 @red: #e09696;
 @yellow: #f5ed62;
 
+.mixin margenes (@top: 0px, @bottom: 0px){
+    margin-top: @top;
+    margin-bottom: @bottom;
+}
+
 
 body {
     background-color:@green; }
   
   .container-banner .jumbotron .banner {
     width: 100%;
-    margin-top: 0px;
-    margin-bottom: -57px;
+    .margenes(0px, -57px);
     height: 700px; }
   
   .container-banner .jumbotron .banner img {
